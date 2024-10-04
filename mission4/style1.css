@@ -17,7 +17,7 @@ text-align: center;
 
 
     border: 5px solid #3388CC;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
         
       }
 
@@ -147,9 +147,8 @@ p{
     
     .c11{ 
         border: 5px solid #3388CC;
-}        
-       .c1
-       {
+        box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);}            
+    .c1{
     
         
            width: 780px;
