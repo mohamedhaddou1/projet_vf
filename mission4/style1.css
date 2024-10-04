@@ -16,8 +16,9 @@ text-align: center;
     .c11{
 
 
-    border-radius: 5px solid #3388CC;
+    border: 5px solid #3388CC;
     box-shadow: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
       }
 
    .c1
