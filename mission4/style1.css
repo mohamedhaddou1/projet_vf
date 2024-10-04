@@ -16,9 +16,9 @@ text-align: center;
     .c11{
 
 
-    border: 5px solid #3388CC;
+    border-radius: 5px solid #3388CC;
     box-shadow: rgba(0, 0, 0, 0.2);
-     margin: 70px;    }
+      }
 
    .c1
    {
