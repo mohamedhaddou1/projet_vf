@@ -1,0 +1,262 @@
+
+
+
+
+
+@media screen and (min-width: 760px){
+header{
+
+    background-color: rgb(255, 102, 0);
+    padding: 20px;
+text-align: center;
+
+    
+    }
+
+    .c11{
+
+
+    border: 5px solid #3388CC;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    }
+
+   .c1
+   {
+
+    
+       width: 780px;
+       height:200px;
+       margin: auto;
+   }
+
+.c1_p1{
+    
+    height: 150px;
+    width: 30%;
+    float: left;
+}
+
+.c1_p2
+{
+   
+    height: 150px;
+    width: 65%;
+    float: right;
+ 
+}
+
+.c2
+{
+    margin: auto;
+    
+    width: 780px;
+    height:200px;
+}
+
+.c2_p1{
+ 
+ height: 150px;
+ width: 30%;
+ float: left;
+}
+
+.c2_p2
+{
+ 
+ height: 150px;
+ width: 65%;
+ float: right;
+
+}
+
+
+.c3
+{
+    margin: auto;
+    
+    width: 780px;
+    height:200px;
+}
+
+.c3_p1{
+ 
+ height: 150px;
+ width: 30%;
+ float: left;
+}
+
+.c3_p2
+{
+ 
+ height: 150px;
+ width: 65%;
+ float: right;
+
+}
+
+.c4
+{
+
+    margin: auto;
+    
+    
+    width: 780px;
+    height:200px;
+}
+
+.c4_p1{
+
+ height: 150px;
+ width: 30%;
+ float: left;
+}
+
+.c4_p2
+{
+ 
+ height: 150px;
+ width: 65%;
+ float: right;
+
+}   
+
+footer{
+    height: 50px;
+    background: orangered;
+
+}
+
+p{
+    font-size: 16px;
+}
+
+}
+
+
+
+@media screen and (max-width: 480px){
+    header{
+    
+        background-color: rgb(255, 102, 0);
+        padding: 20px;
+    text-align: center;
+    
+        
+        }
+    
+    
+    
+       .c1
+       {
+    
+        
+           width: 780px;
+           height:200px;
+           margin: auto;
+       }
+    
+    .c1_p1{
+        
+        height: 150px;
+        width: 30%;
+        float: left;
+    }
+    
+    .c1_p2
+    {
+       
+        height: 150px;
+        width: 65%;
+        float: right;
+     
+    }
+    
+    .c2
+    {
+        margin: auto;
+        
+        width: 780px;
+        height:200px;
+    }
+    
+    .c2_p1{
+     
+     height: 150px;
+     width: 30%;
+     float: left;
+    }
+    
+    .c2_p2
+    {
+     
+     height: 150px;
+     width: 65%;
+     float: right;
+    
+    }
+    
+    
+    .c3
+    {
+        margin: auto;
+        
+        width: 780px;
+        height:200px;
+    }
+    
+    .c3_p1{
+     
+     height: 150px;
+     width: 30%;
+     float: left;
+    }
+    
+    .c3_p2
+    {
+     
+     height: 150px;
+     width: 65%;
+     float: right;
+    
+    }
+    
+    .c4
+    {
+    
+        margin: auto;
+        
+        
+        width: 780px;
+        height:200px;
+    }
+    
+    .c4_p1{
+    
+     height: 150px;
+     width: 30%;
+     float: left;
+    }
+    
+    .c4_p2
+    {
+     
+     height: 150px;
+     width: 65%;
+     float: right;
+    
+    }   
+    
+    footer{
+        height: 50px;
+        background: orangered;
+    
+    }
+    
+    p{
+        font-size: 16px;
+    }
+    
+    }
+
+
+   
