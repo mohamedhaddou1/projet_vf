@@ -17,8 +17,8 @@ text-align: center;
 
 
     border: 5px solid #3388CC;
-    box-shadow: rgba(0, 0, 0, 0.2);
-        border-radius: 20%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        ;
       }
 
    .c1
