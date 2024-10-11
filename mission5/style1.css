@@ -1,0 +1,80 @@
+nav {
+background-color: rgb(0, 0, 0);
+display: flex;
+
+
+
+}
+
+nav>ul>li{
+    display: inline-block;
+    text-decoration: none;
+    float:left;
+    position: relative;
+}
+
+.c1{
+    float: left;
+    padding: 10px;
+    
+}
+
+.c1:hover{
+
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0,15)
+
+}
+.menu{
+
+
+
+}
+
+.nav>ul::after{
+    content: "";
+    display: table;
+    clear:both;
+
+
+}
+
+.sousmenu li:hover a{
+    
+
+color: #EEE;
+font-weight: bold;
+
+}
+
+.menu .sousmenu li:hover{
+
+    background-color: rgb(210, 77, 60);
+}
+
+.sousmenu{
+
+display: none;
+
+text-decoration-style:white;
+
+}
+
+nav>ul>li:hover a{
+
+    padding: 15px 30px 20px 30px
+}
+
+nav>ul>li>a{
+    
+    text-decoration: none;
+
+}
+
+nav ul li:hover .sousmenu{
+    position:absolute;
+    top: 100%;
+    left: 0px;
+    display: inline-block;
+    background-color:rgba(255, 0, 0, 0.3);
+}
