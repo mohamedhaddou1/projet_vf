@@ -1,80 +1,242 @@
-nav {
-background-color: rgb(0, 0, 0);
-display: flex;
+body{
+font-family: Verdana, Calibri, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
 
+nav{
+    width:100%;
+    background-color: #424558;
+}
 
+nav > ul{
+
+    margin: 0px;
+    padding: 0px;
 
 }
 
-nav>ul>li{
-    display: inline-block;
-    text-decoration: none;
-    float:left;
-    position: relative;
+nav li{
+
+    list-style-type: none;
 }
 
-.c1{
-    float: left;
-    padding: 10px;
-    
+nav  > ul > li{
+
+float: left;
+position: relative;
 }
 
-.c1:hover{
+nav > ul::after{
 
-    border-top: 5px solid #e44d26;
-    background-color: rgba(228, 77, 38, 0,15)
-
-}
-.menu{
-
-
-
-}
-
-.nav>ul::after{
     content: "";
     display: table;
-    clear:both;
-
-
+    clear: both;
+}
+.submenu{
+    display: none;
 }
 
-.sousmenu li:hover a{
-    
-
-color: #EEE;
-font-weight: bold;
-
+.submenu li{
+    border-bottom: 1px solid #ccc;
 }
 
-.menu .sousmenu li:hover{
+nav input[type=checkbox]{
 
-    background-color: rgb(210, 77, 60);
+    display: none;
 }
 
-.sousmenu{
+nav label{
 
-display: none;
-
-text-decoration-style:white;
-
+    display: none;
 }
 
-nav>ul>li:hover a{
-
-    padding: 15px 30px 20px 30px
-}
-
-nav>ul>li>a{
-    
-    text-decoration: none;
-
-}
-
-nav ul li:hover .sousmenu{
-    position:absolute;
-    top: 100%;
-    left: 0px;
+nav a{
     display: inline-block;
-    background-color:rgba(255, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+
+    padding: 20px 30px;
+    color: #fff;
+}
+
+nav > ul >li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+
+    display: inline-block;
+    position: absolute;
+    top:100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+
+}
+
+.submenu li a{
+
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222539;
+    width: 270px;
+}
+
+.menu-html:hover{
+
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-css:hover{
+
+    border-top: 5px solid #0070bb;
+    background-color: rgba(174, 180, 184, 0.15);
+}
+
+.menu-js:hover{
+
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-bdd:hover{
+
+    border-top: 5px solid #BBB;
+    background-color: rgba(247, 247, 247, 0.15);
+}
+
+.menu-php:hover{
+
+    border-top: 5px solid #bb006a;
+    background-color: rgba(160, 92, 133, 0.15);
+}
+
+.menu-mission:hover{
+
+    border-top: 5px solid #09be30;
+    background-color: rgba(57, 133, 59, 0.15);
+}
+
+.menu-certification:hover{
+
+    border-top: 5px solid #00bb86;
+    background-color: rgba(48, 128, 112, 0.15);
+}
+
+.menu-html .submenu{
+
+    background-color: #f80c00;
+}
+
+.menu-css .submenu{
+
+    background-color: #0095f8;
+}
+
+.menu-js .submenu{
+
+    background-color: #f4dc01;
+}
+
+.menu-bdd .submenu{
+
+    background-color: #989898;
+}
+
+.menu-php .submenu{
+
+    background-color: #bf039f;
+}
+
+.menu-mission .submenu{
+
+    background-color: #00e200;
+}
+
+.menu-certification .submenu{
+
+    background-color: #00f8df;
+}
+
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+.menu-html .submenu li:hover{
+
+    background-color: #ee5b54;
+}
+
+.menu-css .submenu li:hover{
+
+    background-color: #5aabed;
+}
+
+.menu-js .submenu li:hover{
+
+    background-color: #f1eb6d;
+}
+
+.menu-bdd .submenu li:hover{
+
+    background-color: #b1b1b1;
+}
+
+.menu-php .submenu li:hover{
+
+    background-color: #f064e4;
+}
+
+.menu-mission .submenu li:hover{
+
+    background-color: #6aed71;
+}
+
+.menu-certification .submenu li:hover{
+
+    background-color: #7af1c8;
+}
+
+@media screen and (max-width:780px) {
+
+    .menu-mobile{
+        display: block;
+        color:#FFF;
+        background-color: #fa9600;
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    nav input[type=checkbox]:checked ~ ul{
+        display: block;
+
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    nav ul li, nav ul li a{
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav ul li a, nav ul li:hover a{
+
+       padding: 10px 0px;
+        
+    }
+
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+
 }
