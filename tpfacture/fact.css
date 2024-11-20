@@ -1,0 +1,36 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+.facture{
+ margin-top: 150px;
+ border: 2px solid black;
+ border-radius: 20px;
+ background-color: aquamarine;
+ width: 50%;
+}
+
+.titre{
+
+background-color: aquamarine;
+color: black;
+width: 30%;
+height: 40px;
+}
+
+button{
+
+background-color: green;
+color: white;
+border-radius: 5%;
+
+}
+
+button:hover{
+
+    background-color: white;
+    color: green;
+
+}
