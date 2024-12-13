@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+
+        
+        <div class="facture-container">
+           
+            <div class="header">
+                <div class="company-info">
+                    <p>
+                        <input type="text" class="company-name" placeholder="Nom de la compagnie">
+                    </p>
+                    <p>
+                        <input type="text" class="address" placeholder="Adresse postale">
+                    </p>
+                    <p>
+                        <input type="text" class="contact-details" placeholder="Détails du contact">
+                    </p>
+                </div>
+                <div class="invoice-info">
+                    <p class="facture-title">FACTURE</p>
+                    <p>
+                        <input type="text" class="date" placeholder="Date (e.g., 26/01/2023)">
+                    </p>
+                    <p>
+                        <input type="text" class="invoice-number" placeholder="N° de facture">
+                    </p>
+                </div>
+            </div>
+    
+            
+            <div class="details">
+                <div class="destinataire">
+                    <p class="section-title">Destinataire</p>
+                    <p><input type="text" placeholder="Nom"></p>
+                    <p><input type="text" placeholder="Nom de la société"></p>
+                    <p><input type="text" placeholder="Adresse postale"></p>
+                    <p><input type="text" placeholder="Téléphone"></p>
+                    <p><input type="email" placeholder="Email"></p>
+                </div>
+                <div class="envoyez-a">
+                    <p class="section-title">Envoyez à</p>
+                    <p><input type="text" placeholder="Nom"></p>
+                    <p><input type="text" placeholder="Nom de la société"></p>
+                    <p><input type="text" placeholder="Adresse postale"></p>
+                    <p><input type="text" placeholder="Téléphone"></p>
+                    <p><input type="email" placeholder="Email"></p>
+                </div>
+            </div>
+    
+            
+            <div class="footer">
+                <input type="text" class="payment-conditions" placeholder="Conditions de paiement, par exemple : dû dans X jours">
+            </div>
+        </div>
+    </body>
+    </html>
+        
+        
+
+
+
+<table border="1">
+
+<tr bgcolor="orange"><td>DESCRIPTION</td><td>QUANTITE</td><td>PRIX UNITAIRE</td><td>TOTAL</td></tr>
+<tr class="row">
+    <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="totalLigne" readonly="readonly" value="0.00"></td>
+  </tr>
+  
+  <tr class="row">
+    <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="totalLigne" readonly="readonly" value="0.00"></td>
+  </tr>
+
+  <tr class="row">
+    <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="total" readonly="readonly" value="0.00"></td>
+  </tr>
+
+  <tr class="row">
+    <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="total" readonly="readonly" value="0.00"></td>
+  </tr>
+
+  <tr class="row" id="modeleligne">
+    <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="total" readonly="readonly" value="0.00"></td>
+  </tr>
+
+
+  <tr class="row lastrow" id="lastligne">
+    <td><input type="text" name="desc" class="input desc" value="desc4"></td>
+    <td><input type="text" name="qte" class="input qte" value="0"></td>
+    <td><input type="text" name="prix" class="input prix" value="0"></td>
+    <td><input type="text" name="total" readonly="readonly" value="0.00"></td>
+  </tr>
+  
+
+
+
+
+</table>
+<br><br>
+<table>
+
+<tr><td colspan="3" width="525px">SOUS-TOTALE</td><td><input type="text" name="soustotal" readonly="readonly" value="0.00"></td></tr>
+<br><br><br>
+<tr><td colspan="3">REMISE</td><td><input type="text" name="remise"  value="0.00"></td></tr>
+<tr><td colspan="3">SOUS-TOTALE - REMISE</td><td><input type="text" name="soustotalemoinsremise" readonly="readonly" value="0.00"></td></tr>
+<tr><td colspan="3">TAUX D'IMPOSITION</td><td><input type="text" name="tauxdimposition"  value="0.00"></td></tr>
+<tr><td colspan="3">TAXTE TOTALE</td><td><input type="text" name="taxtetotale" readonly="readonly" value="0.00"></td></tr>
+<tr><td colspan="3">FRAIS D'EXPEDITIONS</td><td><input type="text" name="fraisdexpedition" value="0.00"></td></tr>
+<tr><td colspan="3">SOLDE</td><td><input type="text" name="solde" readonly="readonly" value="0.00"></td></tr>
+</table>
+
+
+
+
+<button onclick="ajouterLigne()">Nouvelle ligne</button>
+
+<button onclick="calculate()">Calculer</button>
+
+<button onclick="remplir()">Remplir automatiquement</button>
+
+
+</center>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.question{
+
+border: 2px solid black;
+margin: 100px;
+width: 35%;
+background-color: rgb(123, 208, 230);
+
+
+
+}
+
+body{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.score{
+
+    border: 2px solid black;
+    margin: 100px;
+    padding: 20px;
+    width: 35%;
+    background-color: rgb(123, 208, 230);
+    
+    
+    
+    }
+
+button{
+margin: 10px;
+
+}
+
+.reponse{
+
+color: red;
+
+}
+
+.titre{
+
+
+        border: 2px solid black;
+        margin: 100px;
+        width: 35%;
+        background-color: rgb(123, 208, 230);
+        
+        
+        
+      
+
+
+
+}
