@@ -27,6 +27,7 @@
                     echo "<td>" . $enreg['nom_produit'] . "</td>";
                     echo "<td>" . $enreg['prix'] . "</td>";
                     echo "<td>" . $enreg['stock'] . "</td>";
+                    echo "<td>" . $enreg['disponibilite'] . "</td>";
                     echo "</tr>";
                 }
                 ?>
